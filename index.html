@@ -1,0 +1,239 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>A Blog Post</title>
+ 
+		<link rel="stylesheet" type="text/css" href="component/semantic/packaged/css/semantic.min.css">
+		<!--[if lt IE 9]> HTML5Shiv
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style>
+			@font-face {
+				font-family: Lato;
+				/*src: url(assets/fonts/Lato/Lato-Regular.ttf);*/
+			}
+			body {
+				font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+				font-size: 14px;
+				background: #FCFCFC url(assets/images/bg.jpg) repeat;
+				margin: 0px;
+				padding: 0px;
+				color: #555555;
+				text-rendering: optimizeLegibility;
+				min-width: 320px;
+			}
+			.ui.grid #main {
+				display: block;
+				margin: 0 auto;
+			}
+			.ui.text.center {
+				text-align: center;
+			}
+			.ui.grid > .column, .ui.grid > .row > .column {
+				text-align: left;
+				font-size: .9rem;
+				line-height: 22px;
+			}
+			.ui.reply.form > .ui.submit.button {
+				font-size: 0.6rem;
+			}
+			.goto_comment {
+				position: fixed;
+				top: 120px;
+				left: 100px;
+				text-decoration: none;
+				font-size: 16px;
+			}
+			#comment_list {
+				list-style: none;
+				padding: 0;
+			}
+		</style>
+ 
+	</head>
+	<body>
+		<div class="ui grid">
+			<section id="main" class="ten wide column center">
+				<a href="#comments" class="goto_comment">
+					<i class="chat icon"></i> 
+					Comments
+				</a>
+				<header class="ui header">
+					<h1>How to Become a Better Developer: Straight Talk</h1>
+					<small>By: Shawn McCool</small>
+				</header>
+				<section>
+					<p>Being a good engineer is a matter of experience, knowledge, and personal philosophy / attitude. Each of these things can be individually improved upon. Intentionally analyze where you are in your career and in the predispositions of your personality. Understand where you're most lacking and always work towards improving that area. </p>
+
+					<p>A developer who is constantly growing is a happy developer that other people want to work with and learn from. A depressed developer stuck in a dead-end learning cycle is a liability to their team and to any project in which they’re involved.</p>
+
+					<p>You are not just some code-monkey. You're a problem-solver whose influence significantly impacts (for better or worse) the quality of your organization. </p>
+
+					<p>Here are some tips on how to become a better developer. (Special thanks to the developers on FreeNode for contributing to this list of ideas.)</p>
+
+					<p><strong>Learn from advanced engineers.</strong></p>
+
+					<p>I come from a time pre-internet. My friend Jeremy was the only other person that I knew who was interested in creating software. We were starved for information. We’d scour bulletin-board systems to find source-code that we could read and learn from. Much of it was too advanced for us, but that’s what we had. </p>
+
+					<p>Now, the internet is full of guides, documentation is easy to find, and we have screencasts that show us step-by-step how to make new applications. These are great resources and we’re lucky to have them. But, many developers forget about the value of directly learning from the work of others.</p>
+
+					<p>Read the code of experienced engineers and aspire to truly understand WHY they made the choices that they have. Work with others to understand. Put away your ego and just study. You’ll be surprised at how quickly you change your tactics.</p>
+
+					<p><a href="https://github.com/fabpot">Fabien Potencier</a> is a PHP heavyweight and he’s a big name in the Symfony scene (consequently the entire PHP scene). The Symfony source is some of the best material to learn from this is available in the world of PHP. Say what you want about Symfony (or better yet, just don’t say anything about it) but there’s a lot that can be learned here.</p>
+
+					<p><a href="https://github.com/taylorotwell">Taylor Otwell</a> is the engineer behind the upcoming framework Laravel 4, which has been modularized into a suite of components entitled Illuminate. He’s utilizing the power of Composer to put real control into the hands of PHP developers and to improve the quality of the codebase and communities by refusing to lock developers into a specific set of functionality. The Illuminate source is a superb resource.</p>
+
+					<p>Take special care to look at unit-tests as well. There’s just as much to be learned here. Unit-tests can function exceptionally as documentation for the capabilities of a project.</p>
+
+					<p><strong>Learn technologies that are specifically different from those that you already know.</strong></p>
+
+					<p>Do you only know how to develop with PHP? Learn Python or C#. </p>
+
+					<p>Only ever use traditional server-side application development techniques? Learn a JS MVC framework like EmberJS. Only use MySQL? Learn ElasticSearch or PostgreSQL.</p>
+
+					<p>You don’t need a use case to learn a new technology. Chances are that once you learn them you’ll discover opportunities to use them. More importantly, if you have only used a couple of programming languages, then your mind is simply not thoroughly primed to understand the variety of solutions that you have the power to implement.</p>
+
+					<p>If you’re relying on a specific stack (LAMP, for example) then you are literally unable to use the "right tools for the right job." The saying is, "If you only have a hammer, you tend to see every problem as a nail." </p>
+
+					<p>An added benefit of learning new technologies is that with every bit of knowledge gained, the next becomes increasingly easy to acquire. This is why experienced developers can pick up a new technology in a day, where a beginner could spend months. Their brains are already primed with all of the concepts necessary in much the same way that learning a 3rd spoken language is often much easier than learning your 2nd.</p>
+
+					<p><strong>Join a community by attending user group meetups and IRC.</strong></p>
+
+					<p>This is one of the most important aspects of becoming a better developer. You’ll be exposed to new ideas via presentations, etc. But, most importantly you’ll be exposed to intelligent and motivated individuals that fill you with the kind of fuel that propels you through the next couple of weeks of enthusiastic learning. The more regularly you attend, the larger gains you’ll see.</p>
+
+					<p>Maintaining a high level of motivation and energy is one of the most important aspects of improving yourself as a professional engineer. If you feel like you don’t have the time to do this sort of thing then YOU are who I’m talking to. With proper management of your brain’s chemicals and natural human tendencies you can be a lot happier and a lot more productive doing what you do.</p>
+
+					<p><strong>Take an interest in design patterns and agile development.</strong></p>
+
+					<p>While it’s not necessary to buy the Design Patterns bible, it’s necessary to appreciate what design patterns are and what control they give you. </p>
+
+					<p>Design patterns teach you both solutions and problems. There’s a good chance that with each new design pattern learned you’ll realize problems that you never considered. You’ll realize how tightly-coupled your code has been and you’ll start to realize that good software design can significantly lower the cost and THE BUSY WORK associated with long-term maintenance of an application. </p>
+
+					<p>The best developers are able to quickly adapt their software to changing requirements without having to deal with a bunch of the most mindless and boring types of development.</p>
+
+					<p>Becoming a better engineer means being less bored, solving problems faster, changing codebases faster, and being able to do more without being as exposed to the negativities of the crunch.</p>
+
+					<p><strong>Don’t create ignorant self-serving opinions.</strong></p>
+
+					<p>How often do you hear things like, "I hate Symfony, it’s too bloated.", "I hate ORM because it’s not as fast as my raw SQL implementations.", "I hate Rails for all of the magic." or, "I really just don’t see the point of Coffeescript?"</p>
+
+					<p>Frankly, someone designed these technologies for a reason. They all have their advantages and disadvantages. There's a good chance that the decisions that define these projects were based on solving problems that you haven't yet encountered and don't yet know how to plan for. They may also have philosophical differences that lead them towards a different kind of solution than you. This doesn't make their solutions wrong.</p>
+
+					<p>The reality is that we have different opinions not only because of the differences in our knowledge and experience but also because of the differences in the problems that we have to solve.</p>
+
+					<p>It’s important for engineers to have experience with a wide array of tools and to understand why to use one over another. As stated earlier, if you don’t know more than one software stack then you have no way to use the best tool for the job.</p>
+
+					<p>It’s certainly reasonable to dislike a technology because of it’s negatives. But, unless you’ve real-world experience then it’s possible that you just have the opinion because someone that you trusted has it or because you want to give yourself the opportunity to not feel compelled to change. Either way, this is a really bad practice.</p>
+
+					<p>Realize what you don’t know and embrace it. Ignorance is a problem to be solved like any other. We're professional problem-solvers, after all.</p>
+
+					<p><strong>Rely on your own intelligence.</strong></p>
+
+					<p>I have been a provider of IRC / forum support for various technologies for over 3 years now. This is an important point that I feel very strongly about.</p>
+
+					<p>You don’t install a technology, play with it for a few minutes, hit a problem, then immediately rely on the help of people on IRC or forum. The people on IRC or the forums that have the knowledge to help you have time as a limited resource. When you’re being helped by someone, they’re not able to help someone else. </p>
+
+					<p>Have you ever gone into an active IRC channel for a technology, asked a basic question, and have been simply ignored while other people are around asking more complex questions and getting help? It’s because these people believe that you’re plenty competent enough to solve your own problem without too much trouble and that you shouldn’t be in IRC asking and waiting for a solution. You should be studying the documentation and codebase and creating one.</p>
+
+					<p>The hard and fast rule is that you must ask yourself "have I really tried?" and if the answer is "no" then start there.</p>
+
+					<p>The real advantage of having access to these experienced individuals is in gaining perspective. If you’re new to development and an experienced developer teaches you her approach to development over the course of a few hours a week that is SIGNIFICANTLY more important than them teaching you something rudimentary like how to use the authentication system or pass variables to a view. </p>
+
+					<p>Anyone can learn how to do that by reading the documentation, or diving into the source, or reading the code of other people’s applications. </p>
+
+					<p>Documentation is a great resource when it’s available. You can usually learn the API from the API documentation and you can usually get some important perspective on how to think about application development with a particular technology from a ‘getting started’ guide or a more general documentation format.</p>
+
+					<p>These resources are here and they’re important. It’s important that you read through the entire documentation for a technology before asking questions in IRC, maybe even multiple times.</p>
+
+					<p>If you can’t find what you need then read the API documentation. EmberJS has a good example of <a href="http://emberjs.com/api/">API documentation</a>. Here you can see classes and methods and understand what each do.</p>
+
+					<p>Source code itself is good documentation. Maybe if you’ve read through the guide-based documentation, api documentation, and other people’s source and question / answers on stackoverflow.com and you’re still having routing problems then you can ask for help from someone else. But, if you’re asking how to make classes load from different folders or something similarly fundamental, you should be heading directly to the source to find your answers.</p>
+
+					<p>The source is far more accurate at answering questions than anyone in IRC, on forums, or anywhere else. The source is the part that actually means something.</p>
+
+					<p>Don’t short-circuit your intelligence. You’re an engineer. Some aspects of the source etc may be difficult for you to wrap your head around but you can do it and it’s not going to take the rest of your life to understand the code either.</p>
+
+					<p>You may say that it just takes too long and that you’re under a deadline. You may well be under the deadline because for much of your career you’ve relied on other people to do your work for you. If you dig in and learn things on your own then you’ll have real knowledge built-up and that knowledge will be yours forever, more or less.</p>
+
+					<p><strong>How to Get Help</strong></p>
+
+					<p>Now that you've tried to do a good job and have exhausted the other resources it may be time to ask for some help. When doing so it's important to realize that it's rare to find experienced people that are willing to answer your question. Respect the time that these people provide as a free service. </p>
+
+					<p>Prepare a list of things that you've tried, all relevant source code, and the exact errors or problems that you're seeing. Read the resources that you've compiled and make sure that they all make sense. It's rude to force someone who is providing free help to do all of the discovery work necessary to be able to sufficiently answer your questions. Give them the best possible set of information from which to work and you will be appreciated and respected by everyone involved. A combination of your work and the work that others expend trying to help you can help people who are otherwise unrelated to you and your problem learn new things. </p>
+
+					<p>You should read <a href="http://mattgemmell.com/2008/12/08/what-have-you-tried/">What Have You Tried?</a>.</p>
+
+					<p><strong>Never call anything technical "magic".</strong></p>
+
+					<p>We’re engineers. We’re supposed to be the people who denounce witchcraft and explain the unknown with rational answers and utilize thorough analysis to provide pragmatic solutions to complex problems. </p>
+
+					<p>We have no business being afraid of the truth. Am I the best programmer? Are you? Are either of us even CLOSE? The answer is no, not by a long-shot. But, we’re professionals. We push forward and improve our philosophy and our toolkit. That’s our job.</p>
+
+					<p>Computer Science is too big a field for any of us. As time moves on, specialization becomes increasingly granular and we become increasingly specialized. However, in the end we ALL benefit from a healthy philosophical approach.</p>
+
+					<p>We must not be afraid of the unknown. We must embrace it. That is the only way forward and in this profession, if we’re not moving forwards then we’re steadily moving backwards.</p>
+				</section>
+				<section class="ui divider"></section>
+				<section id="comments" class="ui comments">
+					<header>
+						<div class="ui label">
+							Comments
+							<div id="comment_count" class="detail">0</div>
+						</div>
+					</header>
+					<ul id="comment_list">
+						
+					</ul>
+					<div class="ui reply form">
+						<div class="field">
+							<input type="text" name="author" placeholder="Name" />
+						</div>
+						<div class="field">
+							<textarea id="message"></textarea>
+						</div>
+						<button class="mini ui button teal labeled icon" id="add_comment">
+							<i class="icon edit"></i> Add Comment
+						</button>
+					</div>
+				</section>
+				<section class="ui divider"></section>
+			</section>
+		</div>
+		<script type="text/template" id="comment-template">
+			<div class="comment">
+				<a class="avatar">
+					<img src="assets/images/fry_squint.jpg">
+				</a>
+				<div class="content">
+				<% if (upvotes < 2) { %>
+					<span class="score details"><%= upvotes %> point</span>
+				<% } else { %>
+					<span class="score details"><%= upvotes %> points</span>
+				<% } %>
+					<span>by</span>
+					<a class="author"><%= author %></a>
+					<div class="metadata">
+						<div class="date"><%= time_elapsed %></div>
+					</div>
+					<div class="text">
+						<%= message %>
+					</div>
+					<div class="actions">
+						<a class="upvote">Upvote</a>
+						<a class="delete">Delete</a>
+					</div>
+				</div>
+			</div>
+		</script>
+		<script type="text/javascript" src="component/jquery/jquery.js"></script>
+		<script type="text/javascript" src="component/underscore/underscore.js"></script>
+		<script type="text/javascript" src="component/moment/moment.js"></script>
+		<script type="text/javascript" src="component/backbone/backbone.js"></script>
+		<script type="text/javascript" src="component/appjs/main.js"></script>
+	</body>
+</html>
