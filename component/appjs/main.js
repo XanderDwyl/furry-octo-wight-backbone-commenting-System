@@ -25,6 +25,7 @@
 			this.$counter.text(this.collection.length);
 		},
 		addComment: function (evt) {
+			evt.preventDefault();
 			var _this = this;
 			var comment = new CommentModel({
 				author: this.$input_author.val(),

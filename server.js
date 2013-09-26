@@ -96,7 +96,7 @@ function updateCommentsById(req, res) {
 function welcomeComments(req, res) {
 	res.send(200, "Welcome to comment API!");
 }
-//app.get('/', welcomeComments);
+app.get('/', welcomeComments);
 app.get('/comments', listComments);
 app.post('/comments', createComments);
 app.put('/comments/:id', updateCommentsById);
