@@ -41,7 +41,7 @@
 			});
 		},
 		createView: function (model, collection) {
-			model.set('time_elapsed', moment(model.get('added')).startOf('hour').fromNow());
+			model.set('time_elapsed', moment(model.get('added'), "YYYYMMDD").fromNow());
 			var view = new CommentView({model: model});
 			this.$comment_list.append(view.render().el);
 			this.clearInputs();
